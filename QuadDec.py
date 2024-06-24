@@ -75,7 +75,7 @@ def encoder():
     nop()
     nop()
 
-@micropython.viper
+@micropython.viper    # got the idea from Peter Hinch, didn't know what an emmiter was
 def twos_comp(v, b: int) -> int:
     val = int(v)
     bits = int(b)
@@ -90,7 +90,7 @@ def QueryEncoders() -> int:
     global Lfirst, Rfirst
 
     # if taking first sample, more reliable timing, however reading from 2 periods old
-    # if taking last: up to 30 pops before clear @ 45us each (22kHz) delays reading by 1.3m/s
+    # if taking last: up to 30 pops before clear @ 45us each (22kHz input) delays reading by 1.3ms
     # which means that value will be out by 0-3% depeding on speed
 
     if LeftMotorEncoder.rx_fifo():
