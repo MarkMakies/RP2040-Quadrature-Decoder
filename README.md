@@ -8,3 +8,5 @@ time.  I schedule it in the main loop to be sure and predictable.
 
 I've tested it reliably up to 22kHz.  My biggest problem was noisy signals, make sure
 you condition / shield them well.
+
+It works very well for me as inputs into a PID controller, I hope it helps you.
