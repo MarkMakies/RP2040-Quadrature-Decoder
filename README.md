@@ -7,3 +7,5 @@ QueryEncoders() every 20ms - exactly (as much as possible), use a timer.  You al
 I've tested it reliably up to 22kHz.  My biggest problem was noisy signals, make sure you condition / shield / terminate them well.
 
 It works very well for me as inputs into a PID controller for a mobile robotic platform, I hope it helps you.
+
+*More projects: https://makies.au*
